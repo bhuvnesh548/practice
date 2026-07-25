@@ -1,0 +1,23 @@
+#hangman game
+import random
+words = ["python", "java", "javascript", "html", "css", "ruby", "php", "csharp", "golang", "swift", "kotlin", "typescript", "sql", "bash", "perl", "rust", "scala", "lua", "haskell", "elixir", "clojure", "fsharp", "objectivec", "r", "matlab", "groovy", "dart", "powershell", "assembly", "fortran", "cobol", "lisp", "prolog", "erlang", "julia", "nim", "crystal", "ocaml", "smalltalk", "ada", "algol", "bcpl", "bliss", "caml", "chuck", "clean", "clu", "commonlisp", "dylan", "eiffel", "factor", "forth", "icon", "j", "labview", "modula2", "occam", "pl1", "postscript", "rexx", "sml", "snobol", "tcl", "verilog", "vhdl", "zsh", "assembly", "basic", "c", "cpp", "delphi", "fortran", "go", "haskell", "java", "javascript", "kotlin", "lua", "matlab", "objectivec", "perl", "php", "python", "r", "ruby", "rust", "scala", "shell", "swift", "typescript", "vbnet", "visualbasic", "assembly", "bash", "cobol", "d", "elixir", "fsharp", "groovy", "haxe", "julia", "lisp", "nim", "ocaml", "pascal", "prolog", "racket", "smalltalk", "solidity", "tcl", "verilog", "vhdl", "zsh", "assembly", "basic", "c", "cpp", "delphi", "fortran", "go", "haskell", "java", "javascript", "kotlin", "lua", "matlab", "objectivec", "perl", "php", "python", "r", "ruby", "rust", "scala", "shell", "swift", "typescript", "vbnet", "visualbasic", "assembly", "bash", "cobol", "d", "elixir", "fsharp", "groovy", "haxe", "julia", "lisp", "nim", "ocaml", "pascal", "prolog", "racket", "smalltalk", "solidity", "tcl", "verilog", "vhdl", "zsh", "assembly", "basic", "c", "cpp", "delphi", "fortran", "go", "haskell", "java", "javascript", "kotlin", "lua", "matlab", "objectivec", "perl", "php", "python", "r", "ruby", "rust", "scala", "shell", "swift", "typescript", "vbnet", "visualbasic"]
+word = random.choice(words)
+guesses = []
+max_errors = 6
+errors = 0
+while errors < max_errors:
+    print("Word:", " ".join([letter if letter in guesses else "_" for letter in word]))
+    print("Errors:", errors)
+    guess = input("Guess a letter: ").lower()
+    if guess in guesses:
+        print("You already guessed that letter!")
+        continue
+    guesses.append(guess)
+    if guess not in word:
+        errors += 1
+    else:
+        if all(letter in guesses for letter in word):
+            print("Congratulations! You guessed the word!")
+            break
+if errors == max_errors:
+    print("Game over! The word was:", word)
