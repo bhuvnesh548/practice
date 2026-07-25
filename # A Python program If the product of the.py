@@ -7,3 +7,5 @@ if product<=1000:
     print(f"the number is less then 1000 so the product is {product}")
 else:
     print(f"the number is greater then 1000 so the sum is {sum}")
+
+                                                                                                                                           
