@@ -6,7 +6,6 @@ def fact(x):
     for i in range(1,x+1):
         fact=i*factorial
         factorial=fact
-    print(factorial)
 num=int(input("enter a number : "))
 print(fact(num))
 
