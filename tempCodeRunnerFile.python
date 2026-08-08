@@ -1,7 +1,38 @@
-from term_image.image import AutoImage
+#chrome dino game
+import pyautogui
+import time
+import random
+import keyboard
+import cv2
+import numpy as np
+screen_width, screen_height = pyautogui.size()
+def detect_obstacle():
+    # Take a screenshot of the game area
+    screenshot = pyautogui.screenshot(region=(screen_width // 2 - 200, screen_height // 2 - 100, 400, 200))
+    screenshot = cv2.cvtColor(np.array(screenshot), cv2.COLOR_RGB2BGR)
 
-# Load your image
-image = AutoImage.from_file("c:\Users\bhuvnesh\Pictures\Camera Roll\WIN_20260724_17_56_54_Pro.jpg")
+    # Convert the image to grayscale
+    gray = cv2.cvtColor(screenshot, cv2.COLOR_BGR2GRAY)
 
-# Print the image directly to the terminal
-print(image)
+    # Apply thresholding to detect obstacles
+    _, thresh = cv2.threshold(gray, 200, 255, cv2.THRESH_BINARY_INV)
+
+    # Find contours of the obstacles
+    contours, _ = cv2.findContours(thresh, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    for contour in contours:
+        if cv2.contourArea(contour) > 500:  # Adjust the area threshold as needed
+            return True
+
+    return False
+def jump():
+    pyautogui.press('space')
+    time.sleep(0.1) 
+dino_game_running = True
+while dino_game_running:
+    if detect_obstacle():
+        jump()
+    time.sleep(0.05)  # Adjust the sleep time as needed
+    if keyboard.is_pressed('q'):  # Press 'q' to quit the game
+        dino_game_running = False
+        
