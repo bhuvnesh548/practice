@@ -1,1 +1,0 @@
-# ceaser cypher is a simple encryption technique where each letter in the plaintext is shifted a certain number of places down or up the alphabet. For example, with a shift of 3, 'A' would become 'D', 'B' would become 'E', and so on. 
