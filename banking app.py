@@ -21,7 +21,11 @@ while True:
             print(f"{"Log in": ^120}")
             acn = input("Enter your account no.: ")
             print(f"Welcome back, {users[acn]["name"]}")
-            print(f"your money: ${users[acn]["money"]}")
-        
+            choice = input("Enter 't' for transection or 'e' to go back to the main menu.")
+            match choice:
+                case 't':
+                    to = input("Please enter account no. to transfer money: ")
+                    amount = int(input("Please enter the amount to transfer: "))
+                    
 
 
