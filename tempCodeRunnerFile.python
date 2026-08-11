@@ -1,6 +1,6 @@
-# Write a script that opens an existing .txt file and counts the total number of words it contains.
-with open('#Anotes.txt', 'r') as file:
-    content = file.read()
-    words = content.split()
-    word_count = len(words)
-    print(f'The total number of words in the file is: {word_count}')
+# Write a program that accepts a number from the user and calculates the sum of all numbers from 1 up to that number.
+n=int(input("enter a number : "))
+total=0
+for i in range (11):
+    total=i+total
+print(total)
