@@ -1,10 +1,7 @@
-#program to enter a number and reverse it and subtract the reverse result untill it is same as original number 
-original_number=input("enter a number :")
-reversed_number=original_number[::-1]
-print(f"reversed number is {reversed_number}")
-for i in original_number:
-    if original_number!=reversed_number:
-        Subtract=int(original_number)-int(reversed_number)
-        original_number=Subtract
-        print(Subtract)
-        
+# Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included).
+# The numbers obtained should be printed in a comma-separated sequence on a single line.
+li=[]
+for i in range(2000,3201):
+    if i%7==0 and i%5!=0:
+        li.append(str(i))
+print(",".join(li))

@@ -1,14 +1,10 @@
-#programm to find all prime factorials of the number  
-num1=int(input("enter the number "))
-num=num1
-print(num,"= ")
-i=2
-while i*i<=num+1:
-    while num%i==0:      
-        print(i,end="")
-        num=num//i
-        if num>i:
-            print(" + ",end="")
-    i+=1
-if num>i:
-    print(num)
+#program to print all prime numbers between a interval 
+a=int(input("enter the lower limit "))
+b=int(input("enter the upper limit "))
+for num in range(a,b):
+    if num>1:
+        for i in range(2,num):
+            if num%i==0:
+                break
+        else:
+            print(num)

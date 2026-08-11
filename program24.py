@@ -1,10 +1,6 @@
-#program to swap two numbers 
-num1=int(input("enter the number 1 "))
-num2=int(input("enter the 2nd number "))
-
-temp=num1
-num1=num2
-num2=temp 
-
-print(f"now the values of num 1 is {num1}")
-print(f"and tne value of num2 is {num2}")
+#Write a program that calculates the factorial of a given number (e.g., 5!) using a for loop.
+num=int(input("enter a number : "))
+factorial=1
+for i in range(1,num+1):
+    factorial=factorial*i
+print(factorial)

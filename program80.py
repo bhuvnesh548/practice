@@ -1,7 +1,10 @@
-# create a new string made of an input string’s first, middle, and last characters.
-string=input("enter a string : ")
-first=string[0]
-middle=len(string)//2
-mid=string[middle]
-last=string[-1]
-print(f"{first}{mid}{last}")
+#programm to find all prime factorials of the number  
+num1=input("enter the number ")
+num=int(num1)
+i=2
+while i*i<=num:
+    while num%i==0:
+        print(i)
+        num=num//i
+    i+=1
+print(num)

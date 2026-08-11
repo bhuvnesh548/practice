@@ -1,8 +1,10 @@
-n=5
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if j<=(n+1)-i:
-            print("*",end="")
-        else:
-            print(" ",end="")
-    print("")
+#Write a program to capitalize the first letter of each word in a given string without using the built-in .title() method.
+text = "hello world from python"
+split=text.split()
+capitalize=[]
+for i in split:
+    cap=i.capitalize()
+    capitalize.append(cap)
+joine=" ".join(capitalize)
+print(joine)
+    

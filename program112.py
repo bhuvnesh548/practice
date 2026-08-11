@@ -1,4 +1,5 @@
-# Create a list of 5 words. Write a loop that iterates through the list and prints each word alongside its character count.
-words = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
-for i in words:
-    print(i,":",len(i))
+# program to add two numbers in python 
+num1=int(input("enter the number 1 : "))
+num2=int(input("enter the number 2 : "))
+sum=num1+num2
+print(f"The sum of {num1} and {num2} is {sum}")

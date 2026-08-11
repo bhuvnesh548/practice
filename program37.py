@@ -1,14 +1,8 @@
-# Calculate income tax for a given income based on these rules:
-# First $10,000: 0% tax
-# Next $10,000: 10% tax
-# # Remaining income: 20% tax
-income=int(input("enter your income "))
-if income<=10000:
-    tax=0
-elif income<=20000:
-    tax=(income-10000)*10/100  
+# Write a program to check if a given number is a palindrome (reads the same forwards and backwards).
+num=12321
+strnum=str(num)[::-1]
+reversednum=int(strnum)
+if num==reversednum:
+    print(f"the number {num} is palindrome")
 else:
-    tax=0+((10000*10)/100)
-    tax+=(income-20000)*20/100
-
-print("total income tax is : ",tax) 
+    print(f"the number {num} is not palindrome")

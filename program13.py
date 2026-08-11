@@ -1,8 +1,6 @@
-n=5
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if i>=j:
-            print("*",end="") 
-        else:
-            print(" ",end="")
-    print("")
+#Write a program that accepts a number from the user and calculates the sum of all numbers from 1 up to that number.
+n=int(input("enter a number : "))
+total=0
+for i in range (1,n+1):
+    total=i+total
+print(total)

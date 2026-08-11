@@ -1,6 +1,5 @@
-#program to enter a number and reverse it and minus the sorted reverse result untill it is same as original number 
-original_number=int(input("enter a number :"))
-print(original_number)
-reversed_number=str(original_number[::-1])
-sorted_list=sorted([original_number]) 
-print(sorted_list)
+# Write a program that takes two separate dictionaries and merges them into one single dictionary.
+dict1 = {"name": "Alice", "age": 25}
+dict2 = {"city": "New York", "job": "Engineer"}
+newdict=dict1|dict2
+print(newdict) 

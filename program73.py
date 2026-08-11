@@ -1,8 +1,3 @@
-#program to generate and print a random number 
-import random
-num1=random.randint(100000,999999)
-num2=random.randint(100000,999999)
-if num1>num2:
-    print(num1,"-",num2,"=")
-else:
-    print(num1,"+",num2,"=")
+# Write a program to count the total number of digits in a given integer 
+integer=1234567890
+print(len(str(integer)))

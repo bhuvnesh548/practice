@@ -1,5 +1,8 @@
-# Create a dictionary where the keys are numbers from 1 to 10 and the values are the squares of those numbers (e.g., 2: 4, 3: 9).
-dict1={}
-for i in range(1,11):
-    dict1[i]=i*i
-print(dict1)
+#Write a program to check if a given number is a palindrome (reads the same forwards and backwards).
+num=input("enter a number you want to check if it is palindrome or not : ")
+original_number=num
+reversed_number=num[::-1]
+if original_number==reversed_number:
+    print(f"the number {num} is palindrome ")
+else:
+    print("the number is not palindrome")

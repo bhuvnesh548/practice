@@ -1,5 +1,31 @@
-#Take two lists and find the elements that appear in both. Use Sets to perform the operation.
-list_a = [1, 2, 3, 4, 5]
-list_b = [4, 5, 6, 7, 8]
-common_elements=set(list_a)&set(list_b)
-print("common Elements are= ",common_elements)
+import os
+os.system("cls")
+bank_logo = '''bank of blah blah '''
+users = {}
+while True:
+    print(f"{bank_logo: ^120}")
+    choice = int(input("1. Create Account\n2. Login\n3. Exit\nEnter your choice: "))
+    match choice:
+        case 1:
+            print(f"welcome to new account creation. your account no. is {len(users)}")
+            name = input("Enter Your name: ")
+            account_password = input("Please set your account password: ")
+            transection_password = input("please set your transection password: ")
+            users[len(users)] = {"money": 200, 
+                                 "name": name, 
+                                 "account_password": account_password, 
+                                 "transection_password": transection_password}
+            print("Account created successfully!")
+        case 2:
+            os.system("cls")
+            print(f"{"Log in": ^120}")
+            acn = input("Enter your account no.: ")
+            print(f"Welcome back, {users[acn]["name"]}")
+            choice = input("Enter 't' for transection or 'e' to go back to the main menu.")
+            match choice:
+                case 't':
+                    to = input("Please enter account no. to transfer money: ")
+                    amount = int(input("Please enter the amount to transfer: "))
+                    
+
+

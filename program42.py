@@ -1,7 +1,6 @@
-#  Print the following pattern where each row contains a number repeated a specific number of times based on its value.
-
-for i in range(6):
-    for j in range (i):
-        print(i,end='')
-    print()
-    
+#Write a function to remove characters from a string starting from index 0 up to n and return a new string.
+def substring(string,n):
+    print("original string is ",string)
+    res=string[n:]
+    return res
+print(substring("bhuvnesh",3))

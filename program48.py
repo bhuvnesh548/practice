@@ -1,6 +1,5 @@
-import time
-my_time=int(input("enter the time "))
-for X in reversed(range(0,my_time)):
-    print(X)
-    time.sleep(1)
-print("time's up ")
+# percentage calculator 
+num1=int(input("enter the numerator :"))
+num2=int(input("enter the denominator  :"))
+percentage=num1/num2*100
+print("your result is {percentage:.2f}%")

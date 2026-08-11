@@ -1,4 +1,12 @@
-#Practice Problem: Accept an integer from the user and display its value in binary format (Base 2).
-
-number=int(input("enter a number: "))
-print(f"the {number} in binary is {bin(number)}")
+# Write a program that counts the total number of vowels and consonants in a given sentence, ignoring spaces and special characters.
+sentance="the quick brown fox jumps over the lazy dog "
+vowel=""
+consonent=""
+for i in sentance.lower():
+    if i in "aeiou":
+        vowel+=i
+    elif i!=" ":
+        consonent+=i
+print(f"{vowel=}")
+print(f"{consonent=}")
+print(f"there are {len(vowel)} vowels and {len(consonent)} consonent in the {sentance=}")

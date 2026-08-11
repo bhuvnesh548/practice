@@ -1,10 +1,4 @@
-#program to check if a number is prime or not 
-n=int(input("enter a number : "))
-for i in range(2,n):
-    if n%i==0:
-        print("it is a not prime number ")
-        break
-    else:
-        print("it is a prime number")
-        break
-       
+#Write a program to find how many times the substring “Emma” appears in a given string.
+str_x = "Emma is good developer. Emma is a writer"
+count = str_x.count("Emma")
+print(f"Emma appeared {count} times")

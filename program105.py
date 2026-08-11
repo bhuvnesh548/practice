@@ -1,11 +1,13 @@
-#Write a program to check if a user-entered string contains any numeric digits. Use a for loop to examine each character.
-user_input = "Python3"
-contains_digit = False
+import math
+num=int(input("enter a number : "))
+num1 = num
+i = 2
+num2=math.sqrt(i)
+while num2<= num1:
+    if num1 % i == 0:
+        print(i)
+        num1= num1//i
+    i += 1
 
-# Iterate through each character
-for char in user_input:
-    if char.isdigit():
-        contains_digit = True
-        break  # Exit early since we found one
-
-print(f"The string '{user_input}' contains digits: {contains_digit}")
+print(num1),
+print(num)

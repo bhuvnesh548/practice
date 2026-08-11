@@ -1,5 +1,5 @@
-#swap without the temp variable 
-a=5
-b=10
-a,b=b,a
-print("the value of a is",a),print("and the value of b is",b)
+# Write a program to display numbers from -10 to -1 using a for loop.
+i=-10
+while i<0:
+    print(i)
+    i+=1

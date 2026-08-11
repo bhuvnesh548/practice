@@ -1,13 +1,4 @@
-import math
-num1 = 60
-num=num1
-j=[]
-i = 2
-num2=math.sqrt(i)
-while num2<= num1:
-    while num1 % i == 0:
-        j.append(i)
-        num1= num1//i
-    i += 1
-factors=" ".join(str(j))
-print(factors,)
+#Write a script that takes a list containing duplicate items and returns a new list with only unique elements.
+numbers=[1,3,5,7,9,9,4,3,6,7,9,8,6,4,3,2,3,5,7,6]
+uniquelist=list(set(numbers))
+print("the new list is ",uniquelist)

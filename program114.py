@@ -1,8 +1,10 @@
-#program to count the total number of vowels (a, e, i, o, u) present in a given sentence.
-sentence=input("enter a sentence : \n")
-vowel="aeiou"
-count=0
-for char in sentence.lower():
-    if char in  vowel:
-        count+=1
-print(count)
+#program to check if a number is prime or not 
+n=int(input("enter a number : "))
+for i in range(2,n):
+    if n%i==0:
+        print("it is a not prime number ")
+        break
+    else:
+        print("it is a prime number")
+        break
+       

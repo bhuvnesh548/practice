@@ -1,9 +1,16 @@
-#create a program that accept the number from the user and print all prime factors of a number 
+#shopping cart program 
+items=[]
+prices=[]
+total=0
 while True:
-    n=int(input("enter a number : "))
-    factors=2
-    for i in range(1,n+1):
-        if n%i==0:
-            factors+=i
-            
-    print(factors)
+    items=input("enter the item(press q and enter to exit) :")
+    if items.lower=="q":
+        break
+    else:
+        price=float(input("enter the price : "))
+        items.append(items)
+        prices.append(price)
+print("your cart ")
+for i in items:
+    print(items)
+print(items)

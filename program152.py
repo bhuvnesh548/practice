@@ -1,12 +1,14 @@
-# Given a list of numbers, iterate through it and print numbers that satisfy these conditions:
-# The number must be divisible by five.
-# If the number is greater than 150, skip it and move to the next.
-# If the number is greater than 500, stop the loop entirely.
-numbers = [12, 75, 150, 180, 145, 525, 50]
-for i in numbers:
-    if i>500:
-        break
-    elif i>150:
-        continue
-    elif i%5==0:
-        print(i)
+# Calculate income tax for a given income based on these rules:
+# First $10,000: 0% tax
+# Next $10,000: 10% tax
+# # Remaining income: 20% tax
+income=int(input("enter your income "))
+if income<=10000:
+    tax=0
+elif income<=20000:
+    tax=(income-10000)*10/100  
+else:
+    tax=0+((10000*10)/100)
+    tax+=(income-20000)*20/100
+
+print("total income tax is : ",tax) 

@@ -1,11 +1,8 @@
-# Start with a list of 10 numbers. Iterate through them and sort them into two separate lists: one for even numbers and one for odd numbers.
-numbers = [12, 7, 34, 21, 5, 10, 8, 3, 19, 2]
-even=[]
-odd=[]
-for each_element in numbers:
-    if each_element%2==0:
-        odd.append(each_element)
-    else:
-        even.append(each_element)
-print("even nums = ",even)
-print("odd nums = ",odd)
+#Create a countdown timer that starts from a given number and counts down to zero using a while loop.
+import time
+i=5
+while i>0:
+    print(i)
+    time.sleep(1)
+    i-=1
+print("BOOOOOOOOOOOOOM🤯")

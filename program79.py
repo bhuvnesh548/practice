@@ -1,7 +1,14 @@
-# Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5, between 2000 and 3200 (both included).
-# The numbers obtained should be printed in a comma-separated sequence on a single line.
-li=[]
-for i in range(2000,3201):
-    if i%7==0 and i%5!=0:
-        li.append(str(i))
-print(",".join(li))
+#Display only those characters which are present at an even index number in given string.
+string=input("enter a string :")
+print("the original string is ",string )
+even=string[0::2]
+print("even index numbers in string are ",even)
+
+#2nd method
+print("")
+print("")
+
+size=len(string)
+print("printing only string even characters ")
+for i in range(0,size,2):
+    print("index[",i,"]",string[i])

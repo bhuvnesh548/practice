@@ -1,27 +1,8 @@
-n=int(input("enter a number : "))
-# for i in range(1,n+1):
-#     for j in range(1,n+1):
-#         if i>=j:
-#             print("*",end="")
-#         else:
-#             print(" ",end="")
-#     print("")
-#     for j in range(1,n+1):
-#         if j>=(n+1)-i:
-#             print("*",end="")
-#         else:
-#             print(" ",end="")
-#     print("")
-# for i in range(1,n+1): 
-#     for j in range(1,n+1):
-#         if j>=(n+1)-i:
-#             print("* ",end="")
-#         else:
-#             print(" ",end="")
-#     print("")
-for i in range(1, n + 1): 
-    for j in range(1, n-i):
-        print(" ", end=" ")
-    for k in range(1,i): 
-        print(" * ", end=" ")
-    print()
+#Iterate through the first 10 numbers (0–9). 
+# In each iteration, print the current number, the previous number, and their sum.
+n=int(input("enter a number "))
+prenum=0
+for i in range(n):
+    sum=i+prenum
+    print(f"the sum of previous number {prenum} and current number {i} is {sum}")
+    prenum=i

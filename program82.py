@@ -1,17 +1,14 @@
-# program to reverse a text in file 
-file=open("1text.txt","r")
-text = file.read()
-list = []
-str = ""
-for i in text:
-    str += i
-    if i == " ":
-        list.append(str)
-        str = ""
-print(list)
-reversed_list=list[::-1] 
-print(reversed_list)
-joinstr=(" ".join(reversed_list))
-text2=open("2text.txt","w")
-output=text2.write(joinstr)  
-file.close() 
+#programm to find all prime factorials of the number  
+num1=int(input("enter the number "))
+num=num1
+print(num,"= ")
+i=2
+while i*i<=num+1:
+    while num%i==0:      
+        print(i,end="")
+        num=num//i
+        if num>i:
+            print(" + ",end="")
+    i+=1
+if num>i:
+    print(num)

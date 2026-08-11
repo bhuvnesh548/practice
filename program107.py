@@ -1,7 +1,13 @@
-# Write a program to print the first 10 natural numbers using a while loop. Each number should be printed on a new line.
-import time
-i=1
-while i<10:
-    print(i)
-    time.sleep(1)
-    i+=1
+import math
+num1 = 60
+num=num1
+j=[]
+i = 2
+num2=math.sqrt(i)
+while num2<= num1:
+    while num1 % i == 0:
+        j.append(i)
+        num1= num1//i
+    i += 1
+factors=" ".join(str(j))
+print(factors,)

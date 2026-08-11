@@ -1,6 +1,5 @@
-# Given a list of integers, find and print both the largest and the smallest numbers.
-nums=[24,45,65,22,3,23,45,32]
-mini=min(nums)
-print("smallest number is ",mini)
-maxi=max(nums)
-print("largest number is ",maxi )
+# Write a function called exponent(base, exp) that returns an integer value of the base raised to the power of the exponent.
+base=int(input("enter the base :"))
+exp=int(input("enter the exp :"))
+answer=base**exp
+print(answer)

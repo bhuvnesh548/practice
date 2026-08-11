@@ -1,6 +1,8 @@
-# area of the triangle
-height=int(input("enter the height : "))
-base=int(input("enter the base : "))
-area = height*base*(1/2)
-print("Area of th given triange is :" , area)
-               
+n=5
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if i>=j:
+            print("*",end="") 
+        else:
+            print(" ",end="")
+    print("")

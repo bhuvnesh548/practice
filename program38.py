@@ -1,12 +1,8 @@
-#python weight converter 
-weight=float(input("Enter the weight : "))
-unit=input("kilograms or pound ? (k or l)")
-if unit == "k":
-    weight=weight*2.205
-    unit="lbs"
-elif weight == "l":
-    weight=weight/2.205
-    unit="kgs"
+#program to generate and print a random number 
+import random
+num1=random.randint(100000,999999)
+num2=random.randint(100000,999999)
+if num1>num2:
+    print(num1,"-",num2,"=")
 else:
-     print(f"{unit} was not valid ")
-print(f"your weight is {round(weight,1)} {unit}") 
+    print(num1,"+",num2,"=")

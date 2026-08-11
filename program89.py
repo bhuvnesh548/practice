@@ -1,8 +1,3 @@
-#Create a countdown timer that starts from a given number and counts down to zero using a while loop.
-import time
-i=5
-while i>0:
-    print(i)
-    time.sleep(1)
-    i-=1
-print("BOOOOOOOOOOOOOM🤯")
+#  Ask the user for a number. Print this number padded with leading zeros so the total width is exactly 5 digits.
+num=(input("enter a number :"))
+print(num.zfill(5))

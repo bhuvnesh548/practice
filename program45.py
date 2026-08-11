@@ -1,10 +1,4 @@
-#pattern 1 
-# * 
-# * * 
-# * * * 
-# * * * *
-for i in range(1,5):
-    for j in range(1,5):
-        if j<=i:
-            print("*", end=" ")
-    print()
+# program to print multiplication table 
+num=int(input("enter a number "))
+for i in range(1,11):
+    print(f"{num}*{i}={num*i}")

@@ -1,8 +1,6 @@
-#program to generate and print a random number 
-import random
-num1=random.randint(100000,999999)
-num2=random.randint(100000,999999)
-if num1>num2:
-    print(num1,"-",num2,"=")
-else:
-    print(num1,"+",num2,"=")
+#program to enter a number and reverse it and minus the sorted reverse result untill it is same as original number 
+original_number=int(input("enter a number :"))
+print(original_number)
+reversed_number=str(original_number[::-1])
+sorted_list=sorted([original_number]) 
+print(sorted_list)

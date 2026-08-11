@@ -1,8 +1,4 @@
-#create a program that accept the number from the user and print all factors of a number 
-while True:
-    n=int(input("enter a number : "))
-    factors=[]
-    for i in range(1,n+1):
-        if n%i==0:
-            factors.append(i)    
-    print(factors)
+# Given a list of integers, find and print both the largest and the smallest numbers.
+list=[23,43,21,35,64,21,32,22,12,97,54,65,73,28,27,54,91,74,63,82,11,19,29,39,49,59,69,79,89,99]
+print("Largest number:", max(list))
+print("Smallest number:", min(list))

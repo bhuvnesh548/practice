@@ -1,14 +1,5 @@
-#Display only those characters which are present at an even index number in given string.
-string=input("enter a string :")
-print("the original string is ",string )
-even=string[0::2]
-print("even index numbers in string are ",even)
-
-#2nd method
-print("")
-print("")
-
-size=len(string)
-print("printing only string even characters ")
-for i in range(0,size,2):
-    print("index[",i,"]",string[i])
+# Create a dictionary where the keys are numbers from 1 to 10 and the values are the squares of those numbers (e.g., 2: 4, 3: 9).
+dict1={}
+for i in range(1,11):
+    dict1[i]=i*i
+print(dict1)

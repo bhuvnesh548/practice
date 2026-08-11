@@ -1,6 +1,9 @@
-#Given a list of integers, find and print both the largest and the smallest numbers.
-numbers=[2,4,6,3,7,8,9]
-mini=min(numbers)
-maxi=max(numbers)
-print("smallest number is ",mini)
-print("largest number is ",maxi)
+str=("my name is bhuvnesh ")
+words = []
+word = ""
+for i in str:
+    word += i
+    if i == " ":
+        words.append(word)
+        word = ""
+print(words)

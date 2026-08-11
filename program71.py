@@ -1,17 +1,14 @@
-def multiplication_or_sum(num1, num2):
-    # Calculate product
-    product = num1 * num2
-    
-    # Check if product is within the threshold
-    if product <= 1000:
-        return product
-    else:
-        return num1 + num2
-
-# Testing Case 1
-result = multiplication_or_sum(20, 30)
-print("The result is", result)
-
-# Testing Case 2
-result = multiplication_or_sum(40, 30)
-print("The result is", result)
+#age group categorization 
+age=int(input("Enter your age: "))
+if age < 18:
+    print("You are a child.")
+elif age < 20:
+    print("You are a teenager.")
+elif age < 65:
+    print("You are an adult.")
+else:
+    print("You are a senior citizen.")
+if age < 0:
+    print("You're not born yet.")
+if age > 110:
+    print("You're probably dead.")

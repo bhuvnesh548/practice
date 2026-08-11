@@ -1,11 +1,13 @@
-#Create a list of 5 fruits. Add a new fruit to the end of the list, then remove the second fruit (at index 1).
-fruits = ["apple", "banana", "cherry", "date", "elderberry"]
-print(fruits)
-while True:
-    add_or_remove=(input("enter the operation : (add/remove)"))
-    if add_or_remove=="add":
-        fruits.append(input("enter fruit name : "))
-        print(fruits)
-    elif add_or_remove=="remove":
-        fruits.pop(int(input("enter the index no. : ")))
-        print(fruits)
+# Create a new list from two given lists such that the new list contains odd numbers from the first list and even numbers from the second list.
+list1=[45,44,76,62,54,13,23,58,59,54]
+list2=[95,67,12,56,84,98,89,57,97,22]
+odd=[]
+even=[]
+for i in list1:
+    if i%2==0:
+        odd.append(i)
+for i in list2:
+    if i%2!=0:
+        even.append(i)
+print("odd=",odd)
+print("even=",even)

@@ -1,8 +1,8 @@
-# Write a program to check if a given number is a palindrome (reads the same forwards and backwards).
-num=12321
-strnum=str(num)[::-1]
-reversednum=int(strnum)
-if num==reversednum:
-    print(f"the number {num} is palindrome")
-else:
-    print(f"the number {num} is not palindrome")
+# program to find the square root of a number
+import math
+n=int(input("enter a number : "))
+sr=n**(1/2)
+print(f"the square root of {n} is {sr}")
+
+sqr=math.sqrt(n)
+print(f"the square root of {n} is {sqr}")

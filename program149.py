@@ -1,6 +1,8 @@
-# Display a message “Done” after successful execution of for loop
-i=10
-while i>0:
-    print(i)
-    i -= 1
-print("BOOOOOOOOOM!")
+n=5
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        if j<=(n+1)-i:
+            print("*",end="")
+        else:
+            print(" ",end="")
+    print("")

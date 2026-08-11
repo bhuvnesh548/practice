@@ -1,6 +1,11 @@
-# Print a downward number pattern where each row starts with a decreasing value.
-for i in range(6,0,-1):
-    for j in range(1,i):
-        print(j,end="")
-    print()
-    
+# Write a program which can compute the factorial of a given numbers.
+# The results should be printed in a comma-separated sequence on a single line.
+# Suppose the following input is supplied to the program:
+def fact(x):
+    factorial=1
+    for i in range(1,x+1):
+        fact=i*factorial
+        factorial=fact
+num=int(input("enter a number : "))
+print(fact(num))
+

@@ -1,8 +1,3 @@
-n=5
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        if i<=n:
-            print("*",end="")
-        else:
-            print(" ",end="")
-    print("")
+km=int(input("enter the distance in kilometer"))
+miles=km*0.621371
+print(f"the distance of {km} kilometer in miles is {miles}")

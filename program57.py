@@ -1,5 +1,12 @@
-# Write a function called exponent(base, exp) that returns an integer value of the base raised to the power of the exponent.
-base=int(input("enter the base :"))
-exp=int(input("enter the exp :"))
-answer=base**exp
-print(answer)
+n=4
+for i in range(1,n+1):
+    p=1
+    for j in range(i+1):
+        print(" ",end="")
+    for j in range(i):
+        print(p,end="")
+        p+=1
+    for j in range(i+1):
+        print(p,end="")
+        p-=1
+    print()

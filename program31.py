@@ -1,8 +1,9 @@
-#Write a program to check if a given number is a palindrome (reads the same forwards and backwards).
-num=input("enter a number you want to check if it is palindrome or not : ")
-original_number=num
-reversed_number=num[::-1]
-if original_number==reversed_number:
-    print(f"the number {num} is palindrome ")
-else:
-    print("the number is not palindrome")
+# Write a program that creates a new text file named notes.txt, writes three separate lines of text to it, and then reads that file back to display the contents in the console.
+with open('#Anotes.txt', 'w') as file:
+    file.write("This is the first line of text.\n")
+    file.write("This is the second line of text.\n")
+    file.write("This is the third line of text.\n")
+
+with open('#Anotes.txt', 'r') as file:
+    contents = file.read()
+    print(contents)

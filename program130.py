@@ -1,31 +1,8 @@
-import os
-os.system("cls")
-bank_logo = '''bank of blah blah '''
-users = {}
-while True:
-    print(f"{bank_logo: ^120}")
-    choice = int(input("1. Create Account\n2. Login\n3. Exit\nEnter your choice: "))
-    match choice:
-        case 1:
-            print(f"welcome to new account creation. your account no. is {len(users)}")
-            name = input("Enter Your name: ")
-            account_password = input("Please set your account password: ")
-            transection_password = input("please set your transection password: ")
-            users[len(users)] = {"money": 200, 
-                                 "name": name, 
-                                 "account_password": account_password, 
-                                 "transection_password": transection_password}
-            print("Account created successfully!")
-        case 2:
-            os.system("cls")
-            print(f"{"Log in": ^120}")
-            acn = input("Enter your account no.: ")
-            print(f"Welcome back, {users[acn]["name"]}")
-            choice = input("Enter 't' for transection or 'e' to go back to the main menu.")
-            match choice:
-                case 't':
-                    to = input("Please enter account no. to transfer money: ")
-                    amount = int(input("Please enter the amount to transfer: "))
-                    
-
-
+#Iterate through the first 10 numbers (0–9). In each iteration, print the current number, the previous number, and their sum.
+print("printing current and previous number in the range 1 to n")
+num=int(input("enter a number : "))
+previous_num=0
+for i in range(0,num):
+    sum=previous_num+i
+    print(f"the sum of previous number {previous_num} and current number {i} is {sum}")
+    previous_num=i

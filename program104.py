@@ -1,10 +1,4 @@
-#Write a program to capitalize the first letter of each word in a given string without using the built-in .title() method.
-text = "hello world from python"
-split=text.split()
-capitalize=[]
-for i in split:
-    cap=i.capitalize()
-    capitalize.append(cap)
-joine=" ".join(capitalize)
-print(joine)
-    
+# Create a program that takes an integer and prints its multiplication table from 1 to 10.
+num=int(input("Enter an integer: "))
+for i in range(1, 11):
+    print(num,"x",i,"=",num*i)

@@ -1,4 +1,11 @@
-# Given a list of integers, find and print both the largest and the smallest numbers.
-list=[23,43,21,35,64,21,32,22,12,97,54,65,73,28,27,54,91,74,63,82,11,19,29,39,49,59,69,79,89,99]
-print("Largest number:", max(list))
-print("Smallest number:", min(list))
+#Write a Python program that accepts two integer numbers. 
+# If the product of the two numbers is less than or equal to 1000, 
+# return their product; otherwise, return their sum.
+num1=int(input("enter the 1st number : "))
+num2=int(input("enter the 2nd number : "))
+product=num1*num2
+sum=num2+num1
+if product<=1000:
+    print(f"the product of {num1} and {num2} is {product}")
+else:
+    print(f"the sum of {num1} and {num2} is {sum}") 

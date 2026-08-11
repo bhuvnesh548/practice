@@ -1,15 +1,4 @@
-#average by using class and objects 
-class Student:
-    def __init__(self,name,markslist):
-        self.name=name
-        self.marks=markslist
-    def average(self):
-        sum=0
-        length=len(self.marks)
-        for marks in self.marks:
-            sum=marks+sum
-        average=sum/length
-        print("average is ",average)
-
-student1=Student("bhuvnesh",[79,65,87,78,97])
-student1.average()
+# Display numbers from a list using a loop
+list=[23,34,21,37,25,45,76,58,43,48,32]
+for i in list:
+    print(i,end=',')

@@ -1,7 +1,4 @@
- #write a prgram to check whether the number is even or odd
-num=int(input("enter a number : "))
-if num%2==0:
-    print(f"the number {num} is even ")
-else: 
-    
-    print(f"the number {num} is odd")
+# Calculate the cube of all numbers from 1 to a given number
+n=int(input("enter a number :"))
+for i in range(1,n+1):
+    print(f"the current number is {i} and the cube is {i*i*i}")

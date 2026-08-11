@@ -1,9 +1,7 @@
-# Write a program that creates a new text file named notes.txt, writes three separate lines of text to it, and then reads that file back to display the contents in the console.
-with open('#Anotes.txt', 'w') as file:
-    file.write("This is the first line of text.\n")
-    file.write("This is the second line of text.\n")
-    file.write("This is the third line of text.\n")
-
-with open('#Anotes.txt', 'r') as file:
-    contents = file.read()
-    print(contents)
+# Write a program to print the first 10 natural numbers using a while loop. Each number should be printed on a new line.
+import time
+i=1
+while i<10:
+    print(i)
+    time.sleep(1)
+    i+=1

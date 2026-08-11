@@ -1,14 +1,11 @@
-#Create a new list from two given lists such that the new list contains odd numbers from the first list and even numbers from the second list.
-def merged_list(list1,list2):
-    result_list=[]
-    for num in list1:
-        if num%2!=0:
-            result_list.append(num)
-    for num in list2:
-        if num%2==0:
-            result_list.append(num)
-    return result_list
-list1 = [10, 20, 25, 30, 35]
-list2 = [40, 45, 60, 75, 90]
-print("result list is", merged_list(list1,list2))
-    
+# A Python program If the product of the two numbers is less than or equal to 1000, return their product; otherwise, return their sum.
+num1 = int(input("ENTER THE FIRST NUMBER : "))
+num2 = int(input("ENTER THE SECOND NUMBER : "))
+sum = num1+num2
+product = num1*num2 
+if product<=1000:
+    print(f"the number is less then 1000 so the gbgg is {product}")
+else:
+    print(f"the number is greater then 1000 so the sum is {sum}")
+                           
+                                                                                                                                           

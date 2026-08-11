@@ -1,6 +1,7 @@
-# program to check if a year is leap year or not 
-n=int(input("enter a year "))
-if n%4==0 and n%100!=0:
-    print("it is a leap year")
-else:
-    print("it is not a leap year")
+# create a new string made of an input string’s first, middle, and last characters.
+string=input("enter a string : ")
+first=string[0]
+middle=len(string)//2
+mid=string[middle]
+last=string[-1]
+print(f"{first}{mid}{last}")

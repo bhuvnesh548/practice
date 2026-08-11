@@ -1,4 +1,6 @@
-#version Printer 
-word="python"
-version=3.14
-print(f"{word:->30}{version:-<30}")
+# Display a message “Done” after successful execution of for loop
+i=10
+while i>0:
+    print(i)
+    i -= 1
+print("BOOOOOOOOOM!")
