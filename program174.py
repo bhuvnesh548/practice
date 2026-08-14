@@ -9,5 +9,5 @@ def minmax(list):
             min=i
     print(f"{min=}")
     print(f"{max=}")
-list=[21,65,35,93,76,10,32,65,32,123,7,5,3,1]
+list=[21,65,35,93,76,10,32,65,32,123]
 minmax(list)
