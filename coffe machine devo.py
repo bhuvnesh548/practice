@@ -1,3 +1,5 @@
+
+import os
 recipies = {
     "espresso": {"milk": 0, "water": 50, "coffee": 18, "money": 1.5},
     "latte": {"milk": 150, "water": 200, "coffee": 24, "money" : 2.5},
@@ -17,4 +19,11 @@ while True:
             print(f"{r}: {resources[r]}")
     else:
         for ing in resources:
-            resources[ing] -= recipies[choice][ing]
+            if ing == "money":
+                resources[ing] += recipies[choice][ing]
+            else:
+                resources[ing] -= recipies[choice][ing]
+        print(f"here's your {choice}")
+
+    input("press enter to continue")
+    os.system("cls")
