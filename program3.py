@@ -8,3 +8,5 @@ for i in original_number:
         original_number=Subtract
         print(Subtract)
         
+
+        
