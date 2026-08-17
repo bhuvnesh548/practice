@@ -25,5 +25,6 @@ while True:
                 resources[ing] -= recipies[choice][ing]
         print(f"here's your {choice}")
 
+
     input("press enter to continue")
     os.system("cls")
